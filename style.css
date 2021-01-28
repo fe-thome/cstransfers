@@ -25,6 +25,9 @@ button {
 header#main-header {
     height: 70px;
     background: black;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 1.25);
+    position: relative;
+    z-index: 1;
 }
 
 header#main-header .content {
@@ -36,27 +39,7 @@ header#main-header .content {
 
 header#main-header img {
     height: 23rem;
-
 }
-
-header#main-header nav ul {
-    display: flex;
-    list-style: none;
-}
-
-header#main-header nav ul li a {
-    display: flex;
-    align-items: center;
-    font-style: 13px;
-    color: #667580;
-    font-weight: bold;
-    margin-left: 30px;
-    margin-right: 7px;
-}
-
-    header#main-header nav ul li:first-child {
-        margin: 0;
-    }
 
 header#main-header div.side {
     display: flex;
@@ -71,7 +54,6 @@ header#main-header div.side input {
     color: #667851;
     font-size-adjust: 12px;
     font-weight: normal;
-    
 }
 
 header#main-header div.side button {
@@ -90,9 +72,6 @@ header#main-header div.side button {
     border-radius: 8px;
 }
 
-
-
-
 header#main-header div.side img {
     height: 45px;
     width: 45px;
@@ -100,4 +79,17 @@ header#main-header div.side img {
     margin: 0 15px;
 }
 
+div.banner {
+    height: 360px;
+    width: 100%;
+    background: royalblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+}
+
+div.banner h1 {
+    font-weight: lighter;
+}
 

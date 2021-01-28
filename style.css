@@ -120,11 +120,12 @@ div.bar input {
 
 div.simulate {
     display: flex;
-    flex-direction: column;
+    flex-direction: row-reverse;
     align-items: center;
     justify-content: center;
     font-size: 12px;
     font-variant: small-caps;
+    gap: 3px;
 }
 
 

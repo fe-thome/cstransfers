@@ -16,11 +16,14 @@ button {
     outline: 0;
 }
 
+
 .content {
     max-width: 1170px;
     margin: 0 auto;
     padding: 0 30px;
 }
+
+/* Header ===================== */
 
 header#main-header {
     height: 70px;
@@ -38,7 +41,7 @@ header#main-header .content {
 }
 
 header#main-header img {
-    height: 23rem;
+    height: 22rem;
 }
 
 header#main-header div.side {
@@ -65,12 +68,17 @@ header#main-header div.side button {
     justify-content: center;
 
     width: 90px;
-    font-weight: bold;
     font-size: 14px;
+    font-variant: small-caps;
     color: #ffffff;
     border: 0;
     border-radius: 8px;
 }
+
+header#main-header div.side button:hover {
+    opacity: 0.6;
+}
+
 
 header#main-header div.side img {
     height: 45px;
@@ -78,6 +86,8 @@ header#main-header div.side img {
     border-radius: 100px;
     margin: 0 15px;
 }
+
+/* Banner ===================== */
 
 div.banner {
     height: 360px;
@@ -93,3 +103,45 @@ div.banner h1 {
     font-weight: lighter;
 }
 
+
+/* Simulate Bar ===================== */
+
+div.bar {
+    height: 60px;
+    background-color: #acacac52;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+div.bar input {
+    background: #f5f8fa;
+    border: 1px solid #e6ecf0;
+    height: 45px;
+    padding: 0 30px 0 12px;
+    border-radius: 8px;
+    color: #667851;
+    font-size-adjust: 12px;
+    font-weight: normal;
+}
+
+div.bar button {
+    height: 45px;
+    background: rgb(145, 31, 238);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 90px;
+    font-size: 14px;
+    font-variant: small-caps;
+    color: #ffffff;
+    border: 0;
+    border-radius: 8px;
+}
+div.bar button:hover {
+    opacity: 0.8;
+}
+
+
+/* Responsive ===================== */

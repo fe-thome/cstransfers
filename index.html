@@ -1,44 +1,49 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <title>@cstransfers</title>
-</head>
-<body>
-    <header id="main-header">
-        <div class="content">
-            <img src="./images/logo.svg" alt="Logo CSTransfers">
-            <div class="side">
-                <!--<input type="text">-->
-                <img src="./images/avatar.png" alt="Avatar">
-                <a href="https://wa.me/5511967290949" target="_blank">agendar</a>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./style.css">
+        <script src='https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.js'></script>
+        <link href='https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.css' rel='stylesheet'/>
+        <title>@cstransfers</title>
+    </head>
+    <body>
+        <header id="main-header">
+            <div class="content">
+                <img src="./images/logo.svg" alt="Logo CSTransfers">
+                <div class="side">
+                    <!--<input type="text">-->
+                    <img src="./images/avatar.png" alt="Avatar">
+                    <a href="https://wa.me/5511967290949" target="_blank">agendar</a>
 
+                </div>
             </div>
-        </div>
+
+        </header>
         
-    </header>
-    <div class="banner">
-        <h1>seu motorista preferido</h1>
-    </div>
-    
-    <div class="bar">
-        
-        <input type="text" name="partida" value="Partida">
-        <input type="text" name="destino" value="Destino">
-        <input type="date" name="" id="">
-        <div class="simulate">
-            <input type="checkbox" name="" id="">
-            <label for="checkbox">ida e volta</label>
+        <div class="banner">
+            <h1>seu motorista preferido</h1>
         </div>
-        <button>simular</button>
-    
-    </div>
+
+        <div class="bar">
+
+            <input type="text" name="partida" value="Partida">
+            <input type="text" name="destino" value="Destino">
+            <input type="date" name="" id="">
+            <div class="simulate">
+                <input type="checkbox" name="" id="">
+                <label for="checkbox">ida e volta</label>
+            </div>
+            <button>simular</button>
+
+        </div>
+        <div id='map'></div>
 
         <footer>
             <img src="./images/avatar.svg" alt="Avatar">
         </footer>
-    
-</body>
+
+        <script src="./scripts.js"></script>
+    </body>
 </html>

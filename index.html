@@ -4,8 +4,12 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./style.css">
-        <script src='https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.js'></script>
+        <!--<script src='https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.js'></script>
         <link href='https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.css' rel='stylesheet'/>
+        -->
+        <script src='https://api.mapbox.com/mapbox.js/v3.3.1/mapbox.js'></script>
+        <link href='https://api.mapbox.com/mapbox.js/v3.3.1/mapbox.css' rel='stylesheet' />
+
         <title>@cstransfers</title>
     </head>
     <body>
@@ -27,18 +31,20 @@
         </div>
 
         <div class="bar">
-
-            <input type="text" name="partida" value="Partida">
-            <input type="text" name="destino" value="Destino">
-            <input type="date" name="" id="">
+            <a href="#" id="geolocate" class="button">Localização</a>
+            <input type="text" name="partida" placeholder="Partida">
+            <input type="text" name="destino" placeholder="Destino">
+            <input type="date" name="data" id="data">
+            
             <div class="simulate">
-                <input type="checkbox" name="" id="">
+                <input type="checkbox" name="ida-volta" id="ida-volta">
                 <label for="checkbox">ida e volta</label>
             </div>
             <button>simular</button>
 
         </div>
         <div id='map'></div>
+        
 
         <footer>
             <img src="./images/avatar.svg" alt="Avatar">

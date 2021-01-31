@@ -177,25 +177,21 @@ footer {
 footer img {
     height: 50px;
     width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 footer img:hover {
     opacity: 0.9;
 }
-/* Responsive ===================== */
 
-a.button {
+footer a {
     display: flex;
+    flex-direction: row-reverse;
     align-items: center;
     justify-content: center;
-    
-    width: 90px;
-    height: 35px;
-    font-size: 14px;
     font-variant: small-caps;
-    background-color: #ffffff;
-    
-    border-radius: 8px;
-    cursor: pointer;
-    text-decoration: none;
 }
+/* Responsive ===================== */
+ 

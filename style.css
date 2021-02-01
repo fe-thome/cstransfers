@@ -48,13 +48,6 @@ header#main-header div.side {
     display: flex;
 }
 
-header#main-header div.side img {
-    height: 45px;
-    width: 45px;
-    border-radius: 100px;
-    margin: 0 15px;
-}
-
 header#main-header div.side a {
     height: 45px;
     background:rgba(140, 82, 255, 0.685);

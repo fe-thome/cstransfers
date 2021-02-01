@@ -21,12 +21,18 @@ function setupMap(center) {
     zoom: 13
   })
 
-  const nav = new mapboxgl.NavigationControl()
-  map.addControl(nav)
+  
 
   var directions = new MapboxDirections({
-    accessToken: mapboxgl.accessToken
+    accessToken: mapboxgl.accessToken,
+    unit: 'metric',
+    language: 'pt-br',
+    alternatives: true,
+    profile: 'mapbox/driving'
   })
 
-  map.addControl(directions, "top-left")
+  map.addControl(directions, "top-right")
+
+  const nav = new mapboxgl.NavigationControl()
+  map.addControl(nav, "bottom-right")
 }

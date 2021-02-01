@@ -28,10 +28,12 @@ function setupMap(center) {
     unit: 'metric',
     language: 'pt-br',
     alternatives: true,
-    profile: 'mapbox/driving'
+    profile: 'mapbox/driving',
+    placeholderOrigin: "Digite o endereço de partida",
+    placeholderDestination: "Digite o destino."
   })
 
-  map.addControl(directions, "top-right")
+  map.addControl(directions, "top-left")
 
   const nav = new mapboxgl.NavigationControl()
   map.addControl(nav, "bottom-right")

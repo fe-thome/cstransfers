@@ -28,7 +28,7 @@ function setupMap(center) {
     unit: 'metric',
     language: 'pt-br',
     profile: 'mapbox/driving-traffic',
-    alternatives: true,
+    alternatives: false,
     congestion: true,
     placeholderOrigin: "Digite o endereço de partida",
     placeholderDestination: "Digite o destino.",

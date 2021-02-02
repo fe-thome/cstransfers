@@ -47,7 +47,7 @@ function setupMap(center) {
     let routes = rota.route
 
     // Each route object has a distance property
-    confirm(routes.map(rota => rota.distance * 1.4))
+    //alert(routes.map(rota => rota.distance * 1.4))
 })
 }
 

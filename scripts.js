@@ -27,14 +27,25 @@ function setupMap(center) {
     accessToken: mapboxgl.accessToken,
     unit: 'metric',
     language: 'pt-br',
-    alternatives: true,
     profile: 'mapbox/driving',
     placeholderOrigin: "Digite o endereço de partida",
-    placeholderDestination: "Digite o destino."
+    placeholderDestination: "Digite o destino.",
+    controls: {instructions: true, profileSwitcher: false  }
+    
   })
 
   map.addControl(directions, "top-left")
 
   const nav = new mapboxgl.NavigationControl()
   map.addControl(nav, "bottom-right")
+  
+  directions.on("route", rota => {
+    // routes is an array of route objects as documented here:
+    // https://docs.mapbox.com/api/navigation/#route-object
+    let routes = rota.route
+
+    // Each route object has a distance property
+    alert(routes.map(rota => rota.distance * 1.4))
+})
 }
+

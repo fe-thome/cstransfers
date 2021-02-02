@@ -30,7 +30,7 @@ function setupMap(center) {
     profile: 'mapbox/driving',
     placeholderOrigin: "Digite o endereço de partida",
     placeholderDestination: "Digite o destino.",
-    controls: {instructions: true, profileSwitcher: false  }
+    controls: {instructions: false, profileSwitcher: false  }
     
   })
 
@@ -45,7 +45,7 @@ function setupMap(center) {
     let routes = rota.route
 
     // Each route object has a distance property
-    alert(routes.map(rota => rota.distance * 1.4))
+    confirm(routes.map(rota => rota.distance * 1.4))
 })
 }
 

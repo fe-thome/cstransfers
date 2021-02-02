@@ -10,7 +10,7 @@ function successLocation(position) {
 }
 
 function errorLocation() {
-  setupMap([-2.24, 53.48])
+  setupMap([-46, 26])
 }
 
 function setupMap(center) {
@@ -27,10 +27,12 @@ function setupMap(center) {
     accessToken: mapboxgl.accessToken,
     unit: 'metric',
     language: 'pt-br',
-    profile: 'mapbox/driving',
+    profile: 'mapbox/driving-traffic',
+    alternatives: true,
+    congestion: true,
     placeholderOrigin: "Digite o endereço de partida",
     placeholderDestination: "Digite o destino.",
-    controls: {instructions: false, profileSwitcher: false, autoFocus: false  }
+    controls: {instructions: false, profileSwitcher: false  }
     
   })
 

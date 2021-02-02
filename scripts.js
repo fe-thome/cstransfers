@@ -30,7 +30,7 @@ function setupMap(center) {
     profile: 'mapbox/driving',
     placeholderOrigin: "Digite o endereço de partida",
     placeholderDestination: "Digite o destino.",
-    controls: {instructions: false, profileSwitcher: false  }
+    controls: {instructions: false, profileSwitcher: false, autoFocus: false  }
     
   })
 

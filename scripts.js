@@ -42,12 +42,9 @@ function setupMap(center) {
   map.addControl(nav, "bottom-right")
   
   directions.on("route", rota => {
-    // routes is an array of route objects as documented here:
-    // https://docs.mapbox.com/api/navigation/#route-object
     let routes = rota.route
-
-    // Each route object has a distance property
-    //alert(routes.map(rota => rota.distance * 1.4))
-})
+    const priceSimulation = routes.map(rota => rota.distance / 1000 * 1.58)
+    document.getElementById("result").innerHTML = `R$ ${Math.abs(priceSimulation).toFixed(2)}`;
+  })
 }
 

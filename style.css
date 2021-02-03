@@ -141,4 +141,11 @@ div#map {
         background: white;
         
     }
+    div.bar {
+        
+        background-color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
   }

@@ -44,7 +44,7 @@ function setupMap(center) {
   directions.on("route", rota => {
     let routes = rota.route
     const priceSimulation = routes.map(rota => rota.distance / 1000 * 1.58)
-    document.getElementById("result").innerHTML = `R$ ${Math.abs(priceSimulation).toFixed(2)}`;
+    document.getElementById("result").innerHTML = `R$ ${Math.abs(priceSimulation).toFixed(2)} valor aproximado` ;
   })
 }
 

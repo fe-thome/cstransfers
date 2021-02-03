@@ -127,7 +127,7 @@ div#map {
 div.bar img {
     height: 50px;
     width: 50px;
-    display: f;
+    display: flex;
     align-items: center;
     justify-content: center;
 }
@@ -137,7 +137,7 @@ div.bar img:hover {
 }
 
 div.bar a {
-    display: flex;
+    display: inline-table;
     align-items: center;
     justify-content: center;
     font-variant: small-caps;

@@ -87,11 +87,8 @@ div.banner {
 }
 
 div.banner h1 {
-    text-align: center;
+    text-align: right;
     font-weight: lighter;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 
 }
 

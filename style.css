@@ -135,3 +135,10 @@ div#map {
 }
 
  
+@media screen and (prefers-color-scheme: light) {
+    header#main-header {
+    
+        background: white;
+        
+    }
+  }

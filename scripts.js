@@ -16,7 +16,7 @@ function errorLocation() {
 function setupMap(center) {
   const map = new mapboxgl.Map({
     container: "map",
-    style: "mapbox://styles/mapbox/light-v10",
+    style: "mapbox://styles/mapbox/dark-v10",
     center: center,
     zoom: 13
   })

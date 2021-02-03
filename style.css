@@ -100,7 +100,7 @@ div.banner h1 {
 /* Simulate Bar ===================== */
 div.bar {
     height: 60px;
-    background-color: #acacac52;
+    background-color: black;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -125,6 +125,7 @@ div.bar a {
     align-items: center;
     justify-content: center;
     font-variant: small-caps;
+    color: whitesmoke;
 }
 
 

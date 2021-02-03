@@ -78,12 +78,16 @@ header#main-header div.side a:hover {
 div.banner {
     height: 360px;
     width: 100%;
-    background: royalblue;
+    background-image: url("./images/voyage.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
     color: #ffffff;
     font-variant: small-caps;
+    transition: all .5s;
 }
 
 div.banner h1 {

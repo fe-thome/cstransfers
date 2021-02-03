@@ -45,8 +45,8 @@ function setupMap(center) {
     let routes = rota.route
     const priceSimulation = routes.map(rota => rota.distance / 1000 * 1.58)
     const timeSimulation = routes.map(rota => rota.duration / 60)
-    document.getElementById("price").innerHTML = `Valor: R$ ${Math.abs(priceSimulation).toFixed(2)}&nbsp|&nbsp`;
-    document.getElementById("duration").innerHTML = `tempo aproximado: ${Math.round(timeSimulation)} minutos`;
+    document.getElementById("price").innerHTML = `R$ ${Math.abs(priceSimulation).toFixed(2)}&nbsp|&nbsp`;
+    document.getElementById("duration").innerHTML = `tempo: ${Math.round(timeSimulation)} min`;
     
   })
 }

@@ -20,7 +20,7 @@ button {
 .content {
     max-width: 1170px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 10px;
 }
 
 /* Header ===================== */
@@ -45,11 +45,9 @@ header#main-header img {
 }
 
 header#main-header div.side {
-    gap: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
-    
 }
 
 header#main-header div.side button {

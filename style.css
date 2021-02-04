@@ -59,10 +59,12 @@ header#main-header div.side button {
     color: #ffffff;
     font-weight: lighter;
     font-variant: small-caps;
-
     border: 0;
     border-radius: 10px;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 header#main-header div.side a {

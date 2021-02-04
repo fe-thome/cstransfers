@@ -30,7 +30,7 @@ header#main-header {
     background: whitesmoke;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 1.25);
     position: relative;
-    z-index: 1;
+    
 }
 
 header#main-header .content {
@@ -45,14 +45,15 @@ header#main-header img {
 }
 
 header#main-header div.side {
+    gap: 8px;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 8px;
+    
 }
 
 header#main-header div.side button {
-    height: 45px;
+    height: 15px;
     width: 35px;
     background:rgb(97, 97, 97);
     font-size: 10px;
@@ -67,15 +68,19 @@ header#main-header div.side button {
     justify-content: center;
 }
 
-header#main-header div.side a {
+header#main-header div.side button:hover {
+    opacity: 0.8;
+}
+
+header#main-header a {
     height: 45px;
+    width: 80px;
     background:rgba(140, 82, 255, 0.685);
 
     display: flex;
     align-items: center;
     justify-content: center;
-
-    width: 80px;
+    
     font-size: 14px;
     font-variant: small-caps;
     color: #ffffff;
@@ -86,7 +91,7 @@ header#main-header div.side a {
 }
 
 
-header#main-header div.side a:hover {
+header#main-header a:hover {
     opacity: 0.8;
 }
 
